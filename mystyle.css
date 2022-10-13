@@ -15,7 +15,7 @@ h2 {
     text-align: center;
 }
 
-
+/* Box model */
 .block {
     border-style: solid;
     border-color: rgb(158, 118, 118);
