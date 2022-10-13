@@ -49,21 +49,28 @@
             <section class="block">
                 <h2>Meeting notes</h2>
                 <hr>
-                <audio controls="controls">
-                    <source src="metric.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                <br>
-                <video width="320" height="240" autoplay muted>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <details>
-                    <summary>Meeting details</summary>
-                    Check out Slack for any messages from TA or your team lead. This week, we need to submit several
-                    group assignments by Sunday. These include team bonding activities, design our own team branding,
-                    decide our team contract, and most importantly, form our project idea and assign team roles.
-                </details>
+                <div class="media">
+                    <details>
+                        <summary>Meeting details</summary>
+                        Check out <p class="ex1">Slack</p> for any messages from TA or your team lead. This week, we
+                        need to
+                        submit several
+                        group assignments by Sunday.
+                        <p class="ex2">Due date: Oct 16th</p>
+                        These include team bonding activities, design our own team branding,
+                        decide our team contract, and most importantly, form our project idea and assign team roles.
+                    </details>
+                    <audio controls="controls" id="meeting_audio">
+                        <source src="metric.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <br>
+                    <video width="320" height="240" autoplay muted id="meeting_video">
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
                 <br>
             </section>
             <section class="block">
@@ -84,22 +91,49 @@
                         <br>
                         <label for="role">Choose your team role from the list:</label>
                         <input list="roles" name="role" id="role">
-                        <datalist id="roles">
-                            <option value="product manager">
-                            <option value="tech lead">
-                            <option value="front-end designer">
-                            <option value="back-end designer">
-                            <option value="marketing">
-                        </datalist>
-                        <label for="mode">Choose a work mode:</label>
+                        <div class="roles">
+                            <datalist id="roles">
+                                <option value="product manager">
+                                <option value="tech lead">
+                                <option value="front-end designer">
+                                <option value="back-end designer">
+                                <option value="marketing">
+                            </datalist>
+                        </div>
+                        <div class="mode">
+                            <label for="mode">Choose a work mode:</label>
+                            <select name="mode" id="mode">
+                                <option value="in-person">in-person</option>
+                                <option value="remote">remote</option>
+                                <option value="hybrid">hybrid</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Sticky notes:</p>
 
-                        <select name="mode" id="mode">
-                            <option value="in-person">in-person</option>
-                            <option value="remote">remote</option>
-                            <option value="hybrid">hybrid</option>
-                        </select>
+                        <div class="box" id="one">One</div>
+                        <div class="box" id="two">Two</div>
+                        <div class="box" id="three">Three</div>
+                        <div class="box" id="four">Four</div>
                         <br>
                         <br>
+                        <div class="flex-container">
+                            <div class="box-1">
+                                <h3>Box One</h3>
+                                Important timelines
+                            </div>
+                            <div class="box-2">
+                                <h3>Box Two</h3>
+                                Due dates
+                            </div>
+                            <div class="box-3">
+                                <h3>Box Three</h3>
+                                Improvement advice
+                            </div>
+                        </div>
+                        <br>
+
                         <button type="button">Submit</button>
                     </fieldset>
                 </form>

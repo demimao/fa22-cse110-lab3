@@ -43,7 +43,6 @@ h2 {
 img {
     height: 150px;
     width: 200px;
-    padding-left: 300px;
 }
 
 #comment {
@@ -57,4 +56,81 @@ details {
 
 #game_list {
     font-family: American Typewriter, serif;
+}
+
+p {
+    color: red;
+}
+
+p.ex1 {
+    display: inline;
+}
+
+p.ex2 {
+    display: block;
+}
+
+.roles {
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #9E7676;
+    color: white;
+}
+
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: #9E7676;
+}
+
+#one {
+    position: static;
+}
+
+p:hover {
+    color: blue;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+.flex-container {
+    border: 1px solid;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.box-1 {
+    border: 1px solid;
+}
+
+.box-2 {
+    border: 1px solid;
+}
+
+.box-3 {
+    border: 1px solid;
+}
+
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: end;
+    column-gap: 10px;
+    row-gap: 15px;
 }
