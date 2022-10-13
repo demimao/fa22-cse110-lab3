@@ -86,14 +86,14 @@ p.ex2 {
     color: white;
 }
 
-#two {
+#two.box {
     position: relative;
     top: 20px;
     left: 20px;
     background: #9E7676;
 }
 
-#one {
+#one.box {
     position: static;
 }
 
@@ -101,7 +101,7 @@ p:hover {
     color: blue;
 }
 
-a:active {
+a[href="index.html"]:active {
     background-color: yellow;
 }
 
@@ -113,14 +113,8 @@ a:active {
     align-content: flex-end;
 }
 
-.box-1 {
-    border: 1px solid;
-}
-
-.box-2 {
-    border: 1px solid;
-}
-
+.box-1,
+.box-2,
 .box-3 {
     border: 1px solid;
 }
@@ -133,4 +127,30 @@ a:active {
     align-items: end;
     column-gap: 10px;
     row-gap: 15px;
+}
+
+@media (max_width: 500px) {
+    .myDiv {
+        background-color: blue;
+    }
+}
+
+input[type="text"] {
+    font-size: 15px;
+}
+
+div p {
+    font-size: 20px;
+}
+
+ol>li {
+    margin: 3em;
+}
+
+li:first-of-type+li {
+    color: red;
+}
+
+div~p {
+    background-color: yellow;
 }
