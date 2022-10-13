@@ -5,11 +5,14 @@
 
 h1 {
     color: brown;
+    text-align: center;
+    padding-top: 30px;
 }
 
 h2 {
     color: hsl(0, 17%, 43%);
     margin: auto;
+    text-align: center;
 }
 
 
@@ -31,4 +34,27 @@ h2 {
 .form {
     padding: 50px 50px 75px 50px;
     margin: 1ch 1ch 1ch 1ch;
+}
+
+.block p {
+    text-decoration: underline;
+}
+
+img {
+    height: 150px;
+    width: 200px;
+    padding-left: 300px;
+}
+
+#comment {
+    min-width: 20em;
+    max-width: 40em;
+}
+
+details {
+    font-family: "Papyrus", Fantasy;
+}
+
+#game_list {
+    font-family: American Typewriter, serif;
 }
