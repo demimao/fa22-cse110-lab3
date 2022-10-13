@@ -1,0 +1,31 @@
+/* apply background styles to your elements */
+.myDiv {
+    background-color: #FFF8EA;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: hsl(0, 17%, 43%);
+    margin: auto;
+}
+
+
+.block {
+    border: 2px solid rgb(158, 118, 118);
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+}
+
+.form {
+    padding: 50px 50px 75px 50px;
+    margin: 1ch 1ch 1ch 1ch;
+}
